@@ -61,33 +61,28 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <hr>
-            <i class="fa fa-star" aria-hidden="true" style="font-size:60px;color:white;"></i>
-            <div>
+            <h2 class="text-center">Contact Me</h2>
+            <hr class="star-primary">
+            <div class="contactos">
                 <form action="">
-                    <div>
+                    <div class="formulario">
                         <label for="">Name</label>
-                        <input type="text">
-                        <p>Please enter your name.</p>
+                        <input type="text" class="control" placeholder="Name" required data-validation-required-message="Please enter your name.">
                     </div>
-                    <div>
+                    <div class="formulario">
                         <label for="">Email Address</label>
-                        <input type="text">
-                        <p>Please enter your email address.</p>
+                        <input type="email"  class="control" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
                     </div>
-                    <div> 
+                    <div class="formulario"> 
                         <label for="">Phone Number</label>
-                        <input type="text">
-                        <p>Please enter phone number</p>
+                        <input type="tel" class="control" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
                     </div>
-                    <div>
+                    <div class="formulario">
                         <label for="">Message</label>
-                        <input type="text">
-                        <p>Plase enter a message</p>
+                        <textarea class="control" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
                     </div>
                     <div>
-                        <button>Send</button>
+                        <button type="submit" class="enviar">Send</button>
                     </div>
                 </form>
             </div>

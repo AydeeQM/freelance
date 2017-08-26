@@ -293,13 +293,82 @@ hr.star-primary:after{
     background: #fff;
 }
 
+/* Definiendo estilos a la parte de contactos*/
+#contact{
+    padding: 100px 0;
+}
 
+.contactos{
+    width: 50%;
+    position: relative;
+    left: 400px;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
 
+.formulario{
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #eee;
+}
 
+label{
+    font-size: .85em;
+    line-height: 1.764705882em;
+    position: relative;
+    z-index: 0;
+    top: 2em;
+    display: block;
+    margin: 0;
+    transition: top .3s ease,opacity .3s ease;
+    vertical-align: baseline;
+    opacity: 0;
+    cursor: default;
+}
 
+.formulario input, textarea{
+    font-size: 1.5em;
+    position: relative;
+    z-index: 1;
+    padding-right: 0;
+    padding-left: 0;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    background: 0 0;
+    box-shadow: none!important;
+    overflow: visible;
+}
 
+.control{
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    line-height: 1.25;
+    color: #495057;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
 
+.enviar{
+    margin-top: 20px;
+    font-weight: 700;
+    color: #fff;
+    border-color: #18bc9c;
+    background-color: #18bc9c;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+}
 
+.enviar:hover{
+    color: #fff;
+    border-color: #0a4b3e;
+    background-color: #128f76; 
+}
 
 
 
