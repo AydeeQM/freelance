@@ -50,17 +50,8 @@ function photo (e){
     h2.setAttribute('class','titulopor');
     h2.innerHTML = 'PROJECT TITLE';
     
-    var rowing = document.createElement('div');
-    rowing.setAttribute('class','wing');
-    
-    var line = document.createElement('img');
-    line.setAttribute('src','assets/images/line.png');
-    
-    var star = document.createElement('img');
-    star.setAttribute('src','assets/images/star.png');
-    
-    var line2 = document.createElement('img');
-    line2.setAttribute('src','assets/images/line.png');
+    var hr = document.createElement('hr');
+    hr.setAttribute('class','star-primary');
     
     var creaIma = document.createElement('img');
     creaIma.setAttribute('src','assets/images/portfolio/'+'ima-'+e.id+'.png');
@@ -94,20 +85,24 @@ function photo (e){
     modal.appendChild(content);
     content.appendChild(rowing);
     rowing.appendChild(h2);
-    rowing.appendChild(line);
-    rowing.appendChild(star);
-    rowing.appendChild(line2);
+    rowing.appendChild(hr);
     rowing.appendChild(creaIma);
     rowing.appendChild(texto);
     rowing.appendChild(uli);
     uli.appendChild(lila1);
     uli.appendChild(lila2);
     uli.appendChild(lila3);
-    rowing.appendChild(closeX)
+    modal.appendChild(closeX)
     body.appendChild(modal);
     
     modal.addEventListener("click", function(event){
         if (event.target && event.target.className == "delete") {
+            event.target.parentNode.remove();
+        }
+    });
+    
+    modal.addEventListener("click", function(event){
+        if (event.target && event.target.className == "verde") {
             event.target.parentNode.remove();
         }
     });
