@@ -5,6 +5,8 @@ var seccc = document.getElementById('portafolio');
 var cont = 1;
 var num = 1;
 
+//agrgando imagenes
+
 function agregaImagen (picture){  
     picture = ['assets/images/portfolio/ima-1.png','assets/images/portfolio/ima-2.png','assets/images/portfolio/ima-3.png','assets/images/portfolio/ima-4.png','assets/images/portfolio/ima-5.png','assets/images/portfolio/ima-6.png'];
     for(var i = 0; i<picture.length; i++){
@@ -29,7 +31,7 @@ function agregaImagen (picture){
 
 agregaImagen();
 
-var love = 1;
+// efexto texto con foto al hacerclick en la imagen
 function photo (e){
     var edpp = e.id;
     
@@ -109,3 +111,36 @@ function photo (e){
 
 
 }
+//efecto scroll con menu dinamico
+
+ var menu = document.getElementsByClassName("encabezado")[0];
+ var Boostrap = document.getElementsByClassName("nav")[0];
+ var link1 = document.getElementsByTagName("li")[0];
+ var link2 = document.getElementsByTagName("li")[1];
+ var link3 = document.getElementsByTagName("li")[2];
+
+ function scrolling (e){
+   var smoothScroll = window.pageYOffset || document.body.scrollTop;
+   if(smoothScroll>3){
+     Boostrap.style.fontSize = "18px";
+   }
+   if(smoothScroll>680){
+      console.log(link1);
+     link1.classList.add("dinamico");
+   }else{
+     link1.classList.remove("dinamico");
+   }
+   if(smoothScroll>1420){
+     link2.classList.add("dinamico");
+     link1.classList.remove("dinamico");
+   }else{
+     link2.classList.remove("dinamico");
+   }
+   if(smoothScroll>2095){
+     link3.classList.add("dinamico");
+     link2.classList.remove("dinamico");
+   }else{
+     link3.classList.remove("dinamico");
+   }
+ }
+ window.addEventListener("scroll",scrolling);

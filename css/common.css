@@ -30,9 +30,11 @@ header{
     transition: padding 0.5s;
 }
 .link li{
-  display: inline-block;
-  padding: 10px;
-  list-style: none;
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    border-radius: 7px;
+    
 }
 
 .link li a{
@@ -43,13 +45,16 @@ header{
   font-size: 35px;
   transition: all 0.5s;
 }
+.dinamico{
+    background-color: #18BC9C;
+}
 
 /* Definiedo el Start Bootstrap */
 
 #home{
     background-color: #18bc9c;
     text-align: center;
-    padding-top: 140px;
+    padding-top: 180px;
     padding-bottom: 50px;
     color: #fff;
     box-sizing: inherit;
@@ -130,14 +135,15 @@ hr.star-primary:after{
 .col-4 {
     display: inline-block;
     margin: 15px;
-    max-width: 33.333333%;
-    min-height: 1px;
-    position: relative;
+    /*max-width: 33.333333%;
+    position: relative;*/
 }
 
-.col-4:hover {
+.col-4 img:hover {
     cursor: pointer;
+    filter: opacity(0.7);
 }
+
 #bumeran{
     margin-bottom: 40px;
 }
