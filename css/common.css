@@ -115,8 +115,17 @@ hr.star-primary:after{
 
 /* Definiendo portafolio*/
 
+.folio{
+    text-align: center!important;
+    font-size: 3em;
+    margin: 50px 0 0 0;
+}
+
 #row{
-   width: 75%;
+    position: relative;
+    left: 200px;
+    width: 75%;
+    
 }
 .col-4 {
     display: inline-block;
@@ -124,6 +133,13 @@ hr.star-primary:after{
     max-width: 33.333333%;
     min-height: 1px;
     position: relative;
+}
+
+.col-4:hover {
+    cursor: pointer;
+}
+#bumeran{
+    margin-bottom: 40px;
 }
 
 .modal {
@@ -219,6 +235,8 @@ hr.star-primary:after{
     border-color: #0a4b3e;
     background-color: #0e6f5c;  
 }
+
+
 .success {
     background-color: aqua;
     background-position: center;
@@ -229,9 +247,51 @@ hr.star-primary:after{
     margin-top: 80px;
 }
 
+#about {
+    color: #fff;
+    background: #18bc9c;
+    padding: 100px 0;
+}
 
+.text-center{
+    text-transform: uppercase;
+    text-align: center!important;
+    font-size: 3em;
+    margin: 0;
+}
 
+.letra{
+    width: 50%;
+    position: relative;
+    left: 350px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
 
+.parrafo p {
+    font-size: 20px;
+}
+
+.descarga{
+    position: relative;
+    color: #fff;
+    border: solid 2px #fff;
+    background: #18bc9c;
+    width: 16%;
+    text-align: center;
+    top: 30px;
+    left: 540px;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.descarga:hover {
+    color: #18bc9c;
+    border: solid 2px #fff;
+    background: #fff;
+}
 
 
 
