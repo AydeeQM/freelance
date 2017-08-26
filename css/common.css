@@ -14,13 +14,13 @@ header{
     border: none;
 }
 
-.container{
+.container{ 
     display: block;
     width: 100%;
     max-width: 1400px;
 }
 
-.link ul{
+.menu ul{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -44,11 +44,76 @@ header{
   transition: all 0.5s;
 }
 
+/* Definiedo el Start Bootstrap */
 
+#home{
+    background-color: #18bc9c;
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 50px;
+    color: #fff;
+    box-sizing: inherit;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
+#home p{
+    font-size: 1.75em;
+    font-weight: 300;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
 
+.name {
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 4.75em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
 
+hr.star-light,hr.star-primary{
+    max-width:250px;
+    margin:25px auto 0;
+    padding:0;
+    text-align:center;
+    border:none;
+    border-top:solid 5px
+}
 
+hr.star-light:after,hr.star-primary:after{
+    font-family:FontAwesome;
+    font-size:2em;
+    position:relative;
+    top:-.8em;
+    display:inline-block;
+    padding:0 .25em;
+    content:'\f005';
+}
+
+hr.star-light{
+    border-color:#fff;
+}
+
+hr.star-light:after{
+    color:#fff;
+    background-color:#18bc9c
+}
+
+hr.star-primary {
+    border-color:#2c3e50
+}
+
+hr.star-primary:after{
+    color:#2c3e50;
+    background-color:#fff
+}
+
+/* Definiendo portafolio*/
 
 
 
